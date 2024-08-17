@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+.strip {
+    position: absolute;
+    display: flex;
+    gap: 2em;
+    top: 20%;
+    width: 80%;
+    text-align: center;
+    width: 75%;
+    height: 50%;
+    padding: 5px;
+}
+
+.image1, .image2, .image3 {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    object-fit: contain;
+}
+
+.buttons {
+    position: absolute;
+    top: 85%;
+    justify-content: center;
+    left: 46%;
+    display: flex;
+    gap: 1em;
+}
+
+.buttons button {
+    border-radius: 50%;
+    border: none;
+    height: 15px;
+    width: 15px;
+}
+
+.leftArrow {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+}
+
+.rightArrow {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+}
+
+.leftArrow button, .rightArrow button {
+    font-size: 3em;
+    border: none;
+    border-radius: 0.15em;
+    background-color: lightgray;
+}
+
+.leftArrow button:hover, .rightArrow button:hover {
+   background-color: rgb(177, 177, 177);
+}
+
+.leftArrow button:active, .rightArrow button:active {
+    background-color: rgb(105, 105, 105);
+ }
+
+.slideshow-play {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
